@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shwe Pixel AI Studio</title>
+    <meta
+      name="description"
+      content="Shwe Pixel AI Studio builds energetic games, smart software, and AI-powered experiences."
+    />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: '#f0fdf4',
+                100: '#dcfce7',
+                500: '#22c55e',
+                600: '#16a34a',
+                900: '#14532d'
+              },
+              accent: '#f59e0b'
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-slate-950 text-slate-100 min-h-screen">
+    <header class="site-shell">
+      <nav class="mx-auto max-w-6xl px-4 py-4 sm:px-6 lg:px-8 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/logo.png" alt="Shwe Pixel AI Studio logo" class="h-10 w-10 rounded-lg" />
+          <span class="font-display text-lg font-semibold site-title">Shwe Pixel AI Studio</span>
+        </a>
+        <div class="flex items-center gap-4 text-sm sm:text-base">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="privacy.html">Privacy</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="mx-auto max-w-6xl px-4 pb-10 pt-8 sm:px-6 lg:px-8">
+        <div class="hero-card rounded-3xl p-6 sm:p-10 lg:p-14">
+          <div class="binary-rain" aria-hidden="true">
+            <span>01010110</span>
+            <span>10100101</span>
+            <span>11001010</span>
+            <span>00110101</span>
+            <span>10101001</span>
+            <span>01100101</span>
+            <span>10011010</span>
+            <span>01001101</span>
+            <span>11100010</span>
+            <span>00101011</span>
+          </div>
+          <h1 class="mt-3 font-display text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+            We build games, software, and AI experiences with pure creative energy.
+          </h1>
+          <p class="mt-5 max-w-3xl text-base sm:text-lg text-slate-200/90">
+            Shwe Pixel AI Studio is passionately focused on making fun, modern, and intelligent digital products.
+            We design gameplay people remember, craft software people trust, and apply AI to create smarter player experiences.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#games" class="cta-primary">Explore Our Games</a>
+            <a href="contact.html" class="cta-secondary">Work With Us</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="games" class="mx-auto max-w-6xl px-4 pb-16 sm:px-6 lg:px-8">
+        <div class="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <h2 class="font-display text-2xl sm:text-3xl font-semibold">Games We Develop</h2>
+            <p class="text-slate-300 mt-2">Current and upcoming titles from Shwe Pixel AI Studio.</p>
+          </div>
+        </div>
+
+        <div class="mt-7 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="game-card">
+            <img src="assets/logo.png" alt="Six Shot Showdown logo" class="game-logo" />
+            <h3 class="font-display text-xl font-semibold">Six Shot Showdown</h3>
+            <p class="mt-2 text-slate-300 text-sm">
+              A turn-based 3D mini-game where the player competes against a CPU by launching a ball into scored hole rows.
+              Higher score after three rounds wins.
+            </p>
+            <a class="game-link" href="https://sawayechan.github.io/sixshotshowdown/" target="_blank" rel="noopener noreferrer">Play Game</a>
+          </article>
+
+          <article class="game-card">
+            <img src="assets/logo.png" alt="Laser Flow logo" class="game-logo" />
+            <h3 class="font-display text-xl font-semibold">Laser Flow</h3>
+            <p class="mt-2 text-slate-300 text-sm">
+              A browser mini puzzle game where you clear boxes in the laser path and guide the beam to the target.
+            </p>
+            <a class="game-link" href="https://sawayechan.github.io/laserflow/" target="_blank" rel="noopener noreferrer">Play Game</a>
+          </article>
+
+          <article class="game-card">
+            <img src="assets/logo.png" alt="Gem Loop logo" class="game-logo" />
+            <h3 class="font-display text-xl font-semibold">Gem Loop</h3>
+            <p class="mt-2 text-slate-300 text-sm">
+              Gem Loop is a browser mini-game inspired by edge-loop arcade timing games. You place bets on gem tiles around
+              a square frame, start the spin, and win if the selector lands on a tile you bet on.
+            </p>
+            <a class="game-link" href="https://sawayechan.github.io/gemloop/" target="_blank" rel="noopener noreferrer">Play Game</a>
+          </article>
+        </div>
+        <p class="mt-5 text-xs text-slate-400">
+          Replace each game logo and link with your final app store or website URLs anytime.
+        </p>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10">
+      <div class="mx-auto max-w-6xl px-4 py-6 sm:px-6 lg:px-8 text-sm text-slate-400 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+        <p>&copy; 2026 Shwe Pixel AI Studio. All rights reserved.</p>
+        <p>Contact: <a href="mailto:shwepixelaistudio@gmail.com" class="underline hover:text-amber-300">shwepixelaistudio@gmail.com</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
